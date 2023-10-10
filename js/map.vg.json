@@ -85,10 +85,12 @@
                     "title": "Cuisine: "
                 },
                 "tooltip": [
+                    {"field": "Name", "type": "nominal", "title": "Name: "},
                     {"field": "Longitude", "type": "quantitative", "title": "Longitude: "},
                     {"field": "Latitude", "type": "quantitative", "title": "Latitude: "},
                     {"field": "Rating", "type": "ordinal", "title": "Michelin Stars: "},
-                    {"field": "Price", "type": "ordinal", "title": "Price: "}
+                    {"field": "Price", "type": "ordinal", "title": "Price: "},
+                    {"field": "Cuisine_Fixed", "type": "nominal", "title": "Cuisine: "}
                 ]
             }
         }
