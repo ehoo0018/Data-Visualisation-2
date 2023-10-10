@@ -29,14 +29,14 @@
             }
         },
         {
-            "name": "price_above",
+            "name": "price_selection",
             "value": 1,
             "bind": {
                 "input": "range",
                 "min": 1,
                 "max": 5,
                 "step": 1,
-                "name": "Price Rating Above: "
+                "name": "Price: "
             }
         },
         {
@@ -72,7 +72,7 @@
                 "url": "https://raw.githubusercontent.com/ehoo0018/Data-Visualisation-2/main/data/michellin.csv"
             },
             "transform": [
-                {"filter": "datum.Price >= price_above"},
+                {"filter": "datum.Price == price_selection"},
                 {"filter": "star_selection == null || datum.Rating == star_selection"}
             ],
             "mark": {"type": "circle", "tooltip": {"content": "data"}},
